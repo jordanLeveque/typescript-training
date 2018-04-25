@@ -27,7 +27,6 @@ module.exports = function (config) {
 
     // list of files to exclude
     exclude: [
-      'src/datatypes/*.ts',
       'src/functions/*.ts',
       'src/functions/various/*.ts',
       'src/params/*.ts',
@@ -38,7 +37,7 @@ module.exports = function (config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       'data/**/*.ts': ['karma-typescript', 'babel', 'sourcemap'],
-      'src/**/*.ts': ['karma-typescript', 'babel', 'sourcemap']
+      'src/**/*.ts': ['karma-typescript', 'babel', 'sourcemap'],
     },
 
     karmaTypescriptConfig: require('./tsconfig'),
